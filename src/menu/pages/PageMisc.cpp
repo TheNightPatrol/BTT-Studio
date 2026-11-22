@@ -252,7 +252,7 @@ void Menu::drawPageMisc() {
                 char* stateNameShort = nullptr;
                 bool cmpNrv = false;
                 bool cmpState = false;
-
+                //(im going crazy, this was so hard, this is most of the camera fix)
                 if (sceneNerveKeeper->mStateCtrl) {
                     al::NerveStateCtrl::State* state = sceneNerveKeeper->mStateCtrl->mCurrentState;
 
@@ -334,3 +334,4 @@ void Menu::drawPageMisc() {
         ImGui::Unindent();
     }
 }
+
